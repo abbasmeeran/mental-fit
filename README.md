@@ -2,9 +2,9 @@
 
 ####  Setup
 
-git clone https://github.com/abbasmeeran/mental-fit 
-npm install
-npm start
+# git clone https://github.com/abbasmeeran/mental-fit 
+# npm install
+# npm start
 
 npm start will start both app and server
 
