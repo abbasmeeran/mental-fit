@@ -8,7 +8,7 @@ import useWebSocket, { ReadyState } from "react-use-websocket";
 const Home = ({ mentalStats, loadMentalStats, authenticated }) => {
   useEffect(() => {
     authenticated && loadMentalStats();
-  }, [loadMentalStats, authenticated, mentalStats]);
+  }, [authenticated]);
 
   // const WS_URL = "ws://127.0.0.1:8181";
   // const { sendJsonMessage, lastJsonMessage, readyState } = useWebSocket(

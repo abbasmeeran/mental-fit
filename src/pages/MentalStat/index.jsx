@@ -8,6 +8,7 @@ const MentalStat = ({ saveMentalStats, history }) => {
   const onSave = async (value) => {
     try {
       await saveMentalStats(value);
+      // history.push("/home"); //history push not working
       window.location.href = "/home";
     } catch (error) {
       toast.error(

@@ -11,6 +11,12 @@ import Level from "../Level";
 import DatePicker from "../DatePicker";
 import { now } from "mongoose";
 
+const sleepLevels = [
+  { label: "Good", value: 10 },
+  { label: "Normal", value: 5 },
+  { label: "Bad", value: 0 },
+];
+
 const MentalStatForm = ({ value, onFormChange, onSave, error }) => {
   const [formState, setFormState] = useState({
     anxiety: 0,
@@ -67,6 +73,7 @@ const MentalStatForm = ({ value, onFormChange, onSave, error }) => {
             label={"Quality Of Sleep"}
             name="sleepQuality"
             value={formState.sleepQuality}
+            levels={sleepLevels}
           />
         </div>
         <div>
