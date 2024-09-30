@@ -37,7 +37,17 @@ const Home = ({ mentalStats, loadMentalStats, authenticated }) => {
   //   console.log(`Got a new message: ${lastJsonMessage}`);
   // }, [lastJsonMessage]);
 
-  if (!authenticated) return <p>Welcome to Health Tracker</p>;
+  if (!authenticated)
+    return (
+      <div class="px-4 sm:px-0">
+        <h1 class="text-base font-semibold leading-7 text-gray-900">
+          Welcome to our Personal Health Tracker
+        </h1>
+        <p class="mt-1 max-w-2xl text-md leading-6 text-gray-500">
+          Track your helath on daily basis.
+        </p>
+      </div>
+    );
   return (
     <div>
       <MentalStatsChart mentalStats={mentalStats} />
