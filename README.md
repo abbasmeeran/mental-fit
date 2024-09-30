@@ -1,11 +1,10 @@
-[TOC]
-
 ####  Setup
 
-# git clone https://github.com/abbasmeeran/mental-fit 
-# npm install
-# npm start
+- git clone https://github.com/abbasmeeran/mental-fit 
+- npm install
+- npm start
 
+#### Notes
 npm start will start both app and server
 
 React APP code is maintained in src folder
