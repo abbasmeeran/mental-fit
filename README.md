@@ -11,7 +11,7 @@ React APP code is maintained in src folder
 Express Server code is maintianed at server folder
 
 app runs in localhost:3000
-api run in localhost:3001/api
+api run in localhost:4000/api
 
 APIs are protected by google token. Use your google signin to login to app
 
